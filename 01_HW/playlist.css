@@ -12,11 +12,14 @@ body {
 }
 
 h1 {
-    text-align: center;
-    margin: 0 0 14px;
-    font-size: 22px;
-    font-weight: 700;
+    h1 {
+        text-align: center;
+        margin: 0 0 14px;
+        font-size: 22px;
+        font-weight: 700;
+    }
 }
+
 
 table {
     background-color: white;
@@ -50,4 +53,17 @@ tr:nth-child() {
 
 tr:hover {
     background-color: #e3f2fd;
+}
+
+
+.blue-title {
+    background: #1976d2; 
+    color: white;        
+}
+
+.highlight-row {
+    background: #cfe9ff;   /* כחול בהיר */
+    color: #003366;        /* כחול כהה */
+    font-weight: bold;     /* טקסט מודגש */
+    font-size: 18px;       /* פונט גדול יותר */
 }
