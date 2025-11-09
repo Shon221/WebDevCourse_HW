@@ -57,13 +57,26 @@ tr:hover {
 
 
 .blue-title {
-    background: #1976d2; 
-    color: white;        
+    background: #1976d2;
+    color: white;
 }
 
 .highlight-row {
-    background: #cfe9ff;   /* כחול בהיר */
-    color: #003366;        /* כחול כהה */
-    font-weight: bold;     /* טקסט מודגש */
-    font-size: 18px;       /* פונט גדול יותר */
+    background: #cfe9ff;
+    color: #003366;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.song-link {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+
+.song-link:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+    cursor: pointer;
 }
