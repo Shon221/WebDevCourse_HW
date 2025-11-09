@@ -1,0 +1,66 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: white;
+}
+
+h1 {
+  margin-bottom: 16px;
+}
+
+.audio-table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 80%;
+  background: #f5f5f5;
+}
+
+.audio-table th,
+.audio-table td {
+  border: 1px solid #bbb;
+  padding: 10px;
+}
+
+.audio-table th {
+  background: #444;
+  color: white;
+}
+
+.audio-table img {
+  width: 80px;
+  border-radius: 4px;
+}
+
+audio {
+  width: 200px;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #e8f1ff;
+}
+
+/* ודא שאין שכבה שחוסמת את הנגן */
+.audio-table td.play-cell {
+  position: relative;
+  pointer-events: auto;
+}
+.audio-table td.play-cell audio {
+  position: relative;
+  z-index: 10;        /* מעל כל שכבת רקע/אפקט */
+  pointer-events: auto;
+  width: 260px;       /* אופציונלי – שולט על רוחב הנגן */
+}
+
+/* מבטל כל pseudo-element שעלול לחסום קליקים */
+.audio-table td.play-cell::before,
+.audio-table td.play-cell::after,
+.audio-table tr::before,
+.audio-table tr::after {
+  content: none !important;
+  pointer-events: none !important;
+}
+
+/* ליתר ביטחון – אל תשתמש אף פעם ב-pointer-events:none על הטבלה */
+.audio-table, .audio-table tr, .audio-table td {
+  pointer-events: auto;
+}

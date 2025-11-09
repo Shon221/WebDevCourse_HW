@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Audio List</title>
+    <link rel="stylesheet" href="audioList.css">
+</head>
+
+<body>
+
+    <h1>My Audio List</h1>
+
+    <table class="audio-table">
+        <thead>
+            <tr>
+                <th>Cover</th>
+                <th>Title</th>
+                <th>Artist</th>
+                <th>Play</th>
+                <th>Download</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td><img src="AudioFiles/drive.png" width="90" alt="Drive cover"></td>
+                <td>Drive</td>
+                <td>Black Coffee & David Guetta</td>
+                <td class="play-cell">
+                    <audio controls preload="metadata" src="AudioFiles/drive.mp3"></audio>
+                </td>
+                <td><a href="AudioFiles/drive.mp3" download>Download</a></td>
+            </tr>
+
+            <tr>
+                <td><img src="AudioFiles/coffee.png" width="90" alt="Coffee cover"></td>
+                <td>Live Set</td>
+                <td>Black Coffee</td>
+                <td class="play-cell">
+                    <audio controls preload="metadata" src="AudioFiles/coffee.mp3"></audio>
+                </td>
+                <td><a href="AudioFiles/coffee.mp3" download>Download</a></td>
+            </tr>
+
+
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>
