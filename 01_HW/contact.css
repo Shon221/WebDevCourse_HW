@@ -1,0 +1,65 @@
+h1 {
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.contact-card {
+    margin: 0 auto;
+    border: 4px double #666;
+    border-radius: 6px;
+    background: #fafafa;
+    text-align: center;
+}
+
+.contact-card .label {
+    background: #f1f1f1;
+    font-weight: 600;
+    color: #333;
+    padding: 5px 12px;
+    border-bottom: 3px double #ddd;
+
+}
+
+.contact-card input[type="text"],
+.contact-card input[type="email"],
+.contact-card input[type="tel"],
+.contact-card textarea {
+    background: white;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    transition: 0.2s;
+    font-size: 24px;
+    width: 85%;
+    padding: 5px 20px;
+    margin: 1px 0 2px;
+
+
+}
+
+.contact-card input:focus,
+.contact-card textarea:focus {
+    border-color: #3f7de0;
+    outline: none;
+    box-shadow: 0 0 4px rgba(63, 125, 224, 0.5);
+
+}
+
+.button-row button {
+    background: #3f7de0;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 18px;
+    transition: 0.2s;
+    font-size: 16px;
+
+
+}
+
+.button-row button:hover {
+    background: #2a5fb8;
+    cursor: pointer;
+
+}
